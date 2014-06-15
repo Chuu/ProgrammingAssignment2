@@ -2,7 +2,7 @@
 ## can cache it's inverse.
 ##
 
-##Creates a matrix that can cache it's inverse.  User set() and get()
+##Creates a matrix that can cache it's inverse.  Uses set() and get()
 ##to get/set underlying values.
 makeCacheMatrix <- function(x = matrix()) {
   
@@ -28,8 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##Returns the inverse of the special matrix above.  Will use cached value
-##if previously calculated.
+##Returns the inverse when passed an instance of the special matrix 
+##type above.  Will use cached value if previously calculated.
 cacheSolve <- function(x, ...) {
   
   retVal <- x$getInverse()
